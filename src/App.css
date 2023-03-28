@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 0.5rem;
+}
+
+.App {
+    width: 100vw;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.App__title {
+    font-family: 'Sail', cursive;
+    font-size: 40px;
+    text-align: center;
+    padding: 1rem 0;
+    text-shadow: 15px 10px 1px rgba(136, 136, 136, 30%)
+}
+
+.App__button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.App__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.App__body {
+    height: 250px;
+    min-width: 350px;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.App__svg {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    filter: drop-shadow(10px 10px 5px rgba(136, 136, 136, 100%));
+    opacity: 0.7;
+}
+
+.App__phrase {
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+    padding: 1.1rem;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.App__author {
+    background-color: rgba(255, 255, 255, 70%);
+    max-width: auto;
+    padding: 0.7rem 0.9rem;
+    margin-right: 1rem;
+    align-self: flex-end;
+    border-radius: 5px;
+    box-shadow: 8px 8px 5px rgba(136, 136, 136, 70%);
+}
+
+.App__author p {
+    margin: 0;
+}
+
+.App__author span {
+    font-weight: 500;
+}
+
+@media (min-width: 700px) {
+
+    .App {
+        gap: 2rem;
+        padding-bottom: 200px;
+    }
+
+    .App__title {
+        font-size: 60px;
+        margin-bottom: 0;
+    }
+
+    .App__body {
+        height: 300px;
+        min-width: 450px;
+        max-width: 600px;
+    }
+
+    .App__phrase {
+        font-size: 33px;
+        padding: 1.7rem;
+    }
+
+    .App__author {
+        align-self: center;
+        margin-right: 0;
+    }
+
+    
+}
